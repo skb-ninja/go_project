@@ -1,0 +1,47 @@
+<mxfile host="65bd71144e">
+    <diagram id="n5e_V8RN7p0toeQWR4FJ" name="ページ1">
+        <mxGraphModel dx="535" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="crawler" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="359" y="60" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="414" y="260"/>
+                            <mxPoint x="244" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="414" y="260"/>
+                            <mxPoint x="584" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="menu" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="359" y="180" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="video" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="359" y="290" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="nHentai" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="189" y="290" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="board" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="529" y="290" width="110" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
