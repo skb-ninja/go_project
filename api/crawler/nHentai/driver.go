@@ -1,12 +1,10 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strings"
 
 	"github.com/sclevine/agouti"
+	"github.com/skb-ninja/go_project/util"
 )
 
 func getDriver() *agouti.WebDriver {
@@ -19,40 +17,25 @@ func getDriver() *agouti.WebDriver {
 	return driver
 }
 
-func getScanner() *bufio.Scanner {
-	return bufio.NewScanner(os.Stdin)
-}
+func DriverMain() {
 
-func makeArray() []string {
-	var s []string
-	sc := getScanner()
-	fmt.Println("makeArray() is Called!")
-	for {
-		sc.Scan()
-		var p string = sc.Text()
-		if p == "Q" {
-			break
-		}
+	//srcList Array
+	s := util.MakeArray()
 
-		p = strings.TrimSpace(p)
-		s = append(s, p)
-	}
-	return s
-}
-
-func main() {
+	//accesing each site &&
 	driver := getDriver()
 	err := driver.Start()
 	if err != nil {
 		fmt.Println(err)
 	}
-
 	page, err := driver.NewPage()
 	if err != nil {
 		fmt.Println(err)
 	}
-	page.Navigate("https://google.com")
-	fmt.Println(page.Title())
+	for _, k := range s {
+		page.Navigate(k)
+		fmt.Println(page.Title())
+	}
 
 	defer driver.Stop()
 

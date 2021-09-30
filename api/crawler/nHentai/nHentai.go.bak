@@ -1,4 +1,15 @@
-// package nHentai
+package nHentai
+
+type Manga struct {
+	title     string
+	src       string
+	parody    []string
+	character []string
+	tags      []string
+	author    string
+	language  string
+	category  []string
+}
 
 /*
 		'Title'    : 'タイトル',

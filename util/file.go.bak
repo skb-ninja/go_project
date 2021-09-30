@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+
+func openFile(fileName string) (f *os.File, err error) {
+	f, err := os.Create(fileName)
+	defer func(){
+		err := f.Close()
+		if err != nil {
+			fmt.Println(err)
+			return 0,err
+		}
+	}
+	fmt.Printf("%v : %T, ¥n", f, err)
+	fmt.Println("")
+	return *os.File , nil
+}
+
+func main() {
+	f,err := openFile("a.txt")
+	if err != nil{
+		fmt.Println(err)
+		return
+	}
+	fmt.Println(f)
+}
